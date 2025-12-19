@@ -38,7 +38,7 @@ module top (
         end
     end
 
-    // ===== BUTTON DEBOUNCERS =====
+    // debouncers 
     logic cymbal_pressed;
     logic snare_pressed;
     logic hihat_pressed;
