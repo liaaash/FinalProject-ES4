@@ -1,0 +1,23 @@
+# UPduino 3.1
+
+# Clock
+set_io ref_clk_i 20        # 12 MHz onboard oscillator
+
+# Syncs
+set_io hsync_o 25           # HSYNC → VGA pin 13
+set_io vsync_o 23           # VSYNC → VGA pin 14
+
+set_io rgb_o[5] 37        # Red MSB (410 Ω)
+set_io rgb_o[4] 31        # Red LSB (820 Ω)
+set_io rgb_o[3] 35        # Green MSB (410 Ω)
+set_io rgb_o[2] 32        # Green LSB (820 Ω)
+set_io rgb_o[1] 27        # Blue MSB (410 Ω)
+set_io rgb_o[0] 26        # Blue LSB (820 Ω)
+
+set_io pll 2
+
+set_io hat_hit_i 36 #red one, when I give the impulse the color is fading but it is turns back to it's default color after waiting a short time but not short as the tom hit's recovery time
+set_io cymbal_hit_i 21 #green one, the impulse lasts relatively longer than the other ones which makes sense when we think about an actual cymbal hit
+set_io tom_hit_i 9 #blue one, the fastest one among them, also the color is not fading when I generate the impulse
+
+set_io timer_btn_i 3

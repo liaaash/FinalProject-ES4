@@ -1,0 +1,13 @@
+#inputs
+set_io -pullup yes button_cymbal 36
+set_io -pullup yes button_hihat 43
+set_io -pullup yes button_tom 34
+set_io -pullup yes button_snare 37
+set_io -pullup yes button_kick 42
+set_io -pullup yes btn_rec 2
+set_io -pullup yes btn_play 46
+set_io led_rec_top 45
+set_io led_play_top 48
+
+#outputs
+set_io pwm_out1 23
